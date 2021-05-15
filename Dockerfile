@@ -2,7 +2,7 @@ FROM        node:lts-alpine
 
 LABEL       author="Linux123123" maintainer="linas.alexx@gmail.com"
 
-RUN         apk add --no-cache --update ffmpeg python3 git build-base \
+RUN         apk add --no-cache --update ffmpeg iproute2 python3 git build-base \
     && adduser -D -h /home/container container
 
 USER        container
