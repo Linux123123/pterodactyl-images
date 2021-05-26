@@ -2,7 +2,7 @@ FROM        node:lts-buster-slim
 
 LABEL       author="Linux123123" maintainer="linas.alexx@gmail.com"
 
-RUN         apt-get update && apt-get -y install ffmpeg git python3 build-essential
+RUN         apt-get update && apt-get -y install ffmpeg git libnss python3 build-essential
 RUN         useradd -m -d /home/container container
 
 USER        container
