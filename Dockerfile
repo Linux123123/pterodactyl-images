@@ -1,4 +1,4 @@
-FROM        node:14-buster-slim
+FROM        node:current-buster-slim
 
 LABEL       author="Linux123123" maintainer="linas.alexx@gmail.com"
 
